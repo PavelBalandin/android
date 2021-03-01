@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="entity_1">temperature</string>
+    <string name="entity_2">weight</string>
+    <string name="entity_3">length</string>
+    <string name="convert_button_text">convert</string>
+    <string name="clear_button_text">clear</string>
+    <string name="menu">Menu</string>
+</resources>

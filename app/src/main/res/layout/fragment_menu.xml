@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/text_menu"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_container"
+        android:scaleType="centerCrop"
+        android:src="@drawable/me" />
+
+    <TextView
+        android:id="@+id/text_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/temperature_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_container"
+        android:text="@string/menu"
+        android:textColor="@color/text"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/temperature_button"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_above="@id/weight_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/entity_1" />
+
+    <Button
+        android:id="@+id/weight_button"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_centerInParent="true"
+        android:text="@string/entity_2" />
+
+    <Button
+        android:id="@+id/length_button"
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/height_button"
+        android:layout_below="@id/weight_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/entity_3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_container"
+        android:text="App Version: 0.01"
+        android:textColor="@color/text" />
+
+
+</RelativeLayout>

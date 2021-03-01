@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/margin_container"
+        android:backgroundTint="@color/white"
+        android:text="@string/entity_2"
+        android:textColor="@color/text" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="start|top"
+        android:layout_margin="@dimen/margin_container"
+        android:background="@color/text" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="end|top"
+        android:layout_margin="@dimen/margin_container"
+        android:background="@color/text" />
+
+    <EditText
+        android:id="@+id/edit_text_from"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="@dimen/margin_container"
+        android:layout_marginTop="@dimen/second_level_margin"
+        android:textColor="@color/text" />
+
+    <EditText
+        android:id="@+id/edit_text_to"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="@dimen/second_level_margin"
+        android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="@dimen/margin_container"
+        android:layout_marginTop="@dimen/third_margin_container"
+        android:text="@string/convert_button_text" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="@dimen/spinner_width"
+        android:layout_height="@dimen/spinner_height"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="@dimen/third_margin_container"
+        android:layout_marginEnd="@dimen/margin_container"
+        android:text="@string/clear_button_text" />
+
+</FrameLayout>
