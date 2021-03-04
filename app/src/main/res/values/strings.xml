@@ -6,4 +6,20 @@
     <string name="convert_button_text">convert</string>
     <string name="clear_button_text">clear</string>
     <string name="menu">Menu</string>
+    <string name="centimeter_name">centimeter</string>
+    <string name="meter_name">meter</string>
+    <string name="kilometer_name">kilometer</string>
+    <string name="inch_name">inch</string>
+    <string name="mile_name">mile</string>
+    <string name="yard_name">yard</string>
+    <string name="foot_name">foot</string>
+    <string name="gram_name">gram</string>
+    <string name="kilogram_name">kilogram</string>
+    <string name="ton_name">ton</string>
+    <string name="carat_name">carat</string>
+    <string name="pound_name">pound</string>
+    <string name="pood_name">pood</string>
+    <string name="kelvin_name">kelvin</string>
+    <string name="celsius_name">celsius</string>
+    <string name="fahrenheit_name">fahrenheit</string>
 </resources>

@@ -32,6 +32,7 @@
 
     <EditText
         android:id="@+id/edit_text_from"
+        android:inputType="number"
         android:layout_width="@dimen/spinner_width"
         android:layout_height="@dimen/spinner_height"
         android:layout_gravity="start|top"
@@ -41,6 +42,7 @@
 
     <EditText
         android:id="@+id/edit_text_to"
+        android:inputType="number"
         android:layout_width="@dimen/spinner_width"
         android:layout_height="@dimen/spinner_height"
         android:layout_gravity="end|top"

@@ -18,11 +18,7 @@ public class TemperatureFragment extends ConverterFragment {
     private static final float MINIMUM_KELVIN = 0;
     private static final float MINIMUM_FAHRENHEIT = -459.67f;
 
-    public Map<String, Float> temperatureMap = new HashMap<String, Float>() {{
-        put("kelvin", 1f);
-        put("celsius", 1f);
-        put("fahrenheit", 1f);
-    }};
+    public Map<String, Float> temperatureMap = new HashMap<String, Float>();
 
     public static TemperatureFragment newInstance() {
 
@@ -43,6 +39,7 @@ public class TemperatureFragment extends ConverterFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initComponents(view);
+        initMap();
         ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, new ArrayList<>(temperatureMap.keySet()));
         spinnerFrom.setAdapter(adapter);
         spinnerTo.setAdapter(adapter);
@@ -118,5 +115,11 @@ public class TemperatureFragment extends ConverterFragment {
         }
 
         return value;
+    }
+
+    private void initMap() {
+        temperatureMap.put(getString(R.string.kelvin_name), 1f);
+        temperatureMap.put(getString(R.string.celsius_name), 1f);
+        temperatureMap.put(getString(R.string.fahrenheit_name), 1f);
     }
 }
