@@ -36,6 +36,7 @@
         android:layout_gravity="start|top"
         android:layout_marginStart="@dimen/margin_container"
         android:layout_marginTop="@dimen/second_level_margin"
+        android:inputType="number"
         android:textColor="@color/text" />
 
     <EditText
@@ -44,6 +45,7 @@
         android:layout_height="@dimen/spinner_height"
         android:layout_gravity="end|top"
         android:layout_marginTop="@dimen/second_level_margin"
+        android:inputType="number"
         android:textColor="@color/text" />
 
     <Button
