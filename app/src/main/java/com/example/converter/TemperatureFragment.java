@@ -12,13 +12,14 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class TemperatureFragment extends ConverterFragment {
     private static final float MINIMUM_CELSIUS = -273.15f;
     private static final float MINIMUM_KELVIN = 0;
     private static final float MINIMUM_FAHRENHEIT = -459.67f;
 
-    public Map<String, Float> temperatureMap = new HashMap<String, Float>();
+    public Map<String, String> temperatureMap = new HashMap<String, String>();
 
     public static TemperatureFragment newInstance() {
 
@@ -48,7 +49,10 @@ public class TemperatureFragment extends ConverterFragment {
         });
 
         convertButton.setOnClickListener(v -> {
-            float value = tC(getFromValue(), spinnerFrom.getSelectedItem().toString(), spinnerTo.getSelectedItem().toString());
+
+            float value = tC(getFromValue(),
+                    temperatureMap.get(spinnerFrom.getSelectedItem().toString()),
+                    temperatureMap.get(spinnerTo.getSelectedItem().toString()));
             if (value != -1000)
                 editTextTo.setText(Float.toString(value));
             else
@@ -118,8 +122,8 @@ public class TemperatureFragment extends ConverterFragment {
     }
 
     private void initMap() {
-        temperatureMap.put(getString(R.string.kelvin_name), 1f);
-        temperatureMap.put(getString(R.string.celsius_name), 1f);
-        temperatureMap.put(getString(R.string.fahrenheit_name), 1f);
+        temperatureMap.put(getString(R.string.kelvin_name), "kelvin");
+        temperatureMap.put(getString(R.string.celsius_name), "celsius");
+        temperatureMap.put(getString(R.string.fahrenheit_name), "fahrenheit");
     }
 }

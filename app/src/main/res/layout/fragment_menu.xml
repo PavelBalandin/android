@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:padding="@dimen/margin_container">
 
     <ImageView
         android:layout_width="100dp"
@@ -48,13 +49,32 @@
         android:text="@string/entity_3" />
 
     <TextView
+        android:id="@+id/versionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/margin_container"
-        android:text="App Version: 0.01"
+        android:layout_marginBottom="@dimen/margin_container"
+        android:text="@string/app_version"
         android:textColor="@color/text" />
+
+    <Button
+        android:id="@+id/uaButton"
+        android:layout_width="@dimen/width_len"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/margin_container"
+        android:text="@string/ua"
+        android:textSize="@dimen/len_size_button" />
+
+    <Button
+        android:id="@+id/enButton"
+        android:layout_width="@dimen/width_len"
+        android:layout_height="@dimen/height_len"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/uaButton"
+        android:text="@string/en"
+        android:textSize="@dimen/len_size_button" />
 
 
 </RelativeLayout>

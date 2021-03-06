@@ -18,6 +18,7 @@ public class WeightFragment extends ConverterFragment {
 
     private Map<String, Float> weightMap = new HashMap<String, Float>();
 
+
     public static WeightFragment newInstance() {
 
         Bundle args = new Bundle();

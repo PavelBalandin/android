@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Конвертер</string>
+    <string name="entity_1">Температура</string>
+    <string name="entity_2">Вага</string>
+    <string name="entity_3">Довжина</string>
+    <string name="convert_button_text">конвертувати</string>
+    <string name="clear_button_text">очистити</string>
+    <string name="menu">Меню</string>
+    <string name="centimeter_name">сантиметр</string>
+    <string name="meter_name">метр</string>
+    <string name="kilometer_name">кілометр</string>
+    <string name="inch_name">дюйм</string>
+    <string name="mile_name">миля</string>
+    <string name="yard_name">ярд</string>
+    <string name="foot_name">фут</string>
+    <string name="gram_name">грам</string>
+    <string name="kilogram_name">кілограм</string>
+    <string name="ton_name">тонна</string>
+    <string name="carat_name">карат</string>
+    <string name="pound_name">фунт</string>
+    <string name="pood_name">пуд</string>
+    <string name="kelvin_name">кельвін</string>
+    <string name="celsius_name">цельсій</string>
+    <string name="fahrenheit_name">фаренгейт</string>
+    <string name="ua">ua</string>
+    <string name="en">en</string>
+    <string name="app_version">Версія застосунку: 0.02</string>
+</resources>

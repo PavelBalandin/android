@@ -7,4 +7,7 @@
     <dimen name="margin_container">10dp</dimen>
     <dimen name="second_level_margin">80dp</dimen>
     <dimen name="third_margin_container">150dp</dimen>
+    <dimen name="width_len">50dp</dimen>
+    <dimen name="height_len">40dp</dimen>
+    <dimen name="len_size_button">10sp</dimen>
 </resources>

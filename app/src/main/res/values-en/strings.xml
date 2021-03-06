@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Converter</string>
     <string name="entity_1">temperature</string>
@@ -24,5 +25,5 @@
     <string name="fahrenheit_name">fahrenheit</string>
     <string name="ua">ua</string>
     <string name="en">en</string>
-    <string name="app_version">App Version: 0.01</string>
+    <string name="app_version">App Version: 0.02</string>
 </resources>
